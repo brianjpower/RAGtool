@@ -2,7 +2,7 @@ import getpass
 import openai
 import os
 os.environ["USER_AGENT"] = "RAGtool/1.0 (Python 3.11; Windows 11; custom langchain integration)"
-openai.api_key = os.environ["OPENAI_API_KEY"]
+#openai.api_key = os.environ["OPENAI_API_KEY"]
 if not os.environ.get("OPENAI_API_KEY"):
   os.environ["OPENAI_API_KEY"] = getpass.getpass("Enter API key for OpenAI: ")
 
