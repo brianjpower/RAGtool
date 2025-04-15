@@ -1,12 +1,12 @@
 import getpass
 import os
 os.environ["USER_AGENT"] = "RAGtool/1.0 (Python 3.11; Windows 11; custom langchain integration)"
-os.environ["OPENAI_API_KEY"]="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"
+os.environ["OPENAI_API_KEY"]=""
 if not os.environ.get("OPENAI_API_KEY"):
   os.environ["OPENAI_API_KEY"] = getpass.getpass("Enter API key for OpenAI: ")
 
 os.environ["LANGSMITH_TRACING"] = "true"
-os.environ["LANGSMITH_API_KEY"] = "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"
+os.environ["LANGSMITH_API_KEY"] = ""
 
 
 os.environ["LANGSMITH_ENDPOINT"] ="https://api.smith.langchain.com"
